@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '9.0'
   s.requires_arc     = true
 
-  s.subspec 'ABCPiti' do |sp|
+  s.subspec 'ABCPitiKit' do |sp|
     sp.public_header_files = 'ABCPitiSDK/ABCPaitiKit.framework/Headers/ABCPaitiKit.h'
     sp.source_files        = 'ABCPitiSDK/ABCPaitiKit.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'ABCPitiSDK/ABCPaitiKit.framework'

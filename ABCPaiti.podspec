@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-  s.name             = "ABCPiti"
+  s.name             = "ABCPaiti"
   s.version          = "0.0.1"
-  s.summary          = "ABCPiti."
-  s.description      = "ABCPiti of bing"
+  s.summary          = "ABCPaiti."
+  s.description      = "ABCPaiti of bing"
   s.homepage         = "http://www.abcpen.com"
   s.license          = 'MIT'
   s.author           = { "bing" => "bing@abcpen.com" }
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '9.0'
   s.requires_arc     = true
 
-  s.subspec 'ABCPitiKit' do |sp|
+  s.subspec 'ABCPaitiKit' do |sp|
     sp.public_header_files = 'ABCPitiSDK/ABCPaitiKit.framework/Headers/ABCPaitiKit.h'
     sp.source_files        = 'ABCPitiSDK/ABCPaitiKit.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'ABCPitiSDK/ABCPaitiKit.framework'

@@ -1,7 +1,7 @@
 ## 笔声SDK集成文档
-[![Version](https://img.shields.io/cocoapods/v/ABCIM.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
-[![License](https://img.shields.io/cocoapods/l/ABCIM.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
-[![Platform](https://img.shields.io/cocoapods/p/ABCIM.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
+[![Version](https://img.shields.io/cocoapods/v/ABCPaiti.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
+[![License](https://img.shields.io/cocoapods/l/ABCPaiti.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
+[![Platform](https://img.shields.io/cocoapods/p/ABCPaiti.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
 
 [TOC]
 

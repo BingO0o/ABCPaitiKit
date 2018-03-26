@@ -1,0 +1,6 @@
+framework module ABCPaitiKit {
+  umbrella header "ABCPaitiKit.h"
+
+  export *
+  module * { export * }
+}

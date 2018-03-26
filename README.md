@@ -1,4 +1,8 @@
-# 笔声SDK集成文档
+## 笔声SDK集成文档
+[![Version](https://img.shields.io/cocoapods/v/ABCIM.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
+[![License](https://img.shields.io/cocoapods/l/ABCIM.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
+[![Platform](https://img.shields.io/cocoapods/p/ABCIM.svg?style=flat)](http://cocoapods.org/pods/ABCPaiti)
+
 [TOC]
 
 ### REVISION HISTORY
@@ -10,6 +14,11 @@ Version | Date |Changed By |Changes
 请确保满足以下开发环境要求：
 - Apple XCode 6.0或以上版本
 - iOS 9.0或以上版本
+
+### pod导入
+~~~
+pod 'ABCPaiti', '~>0.0.1'
+~~~
 
 ### 快速集成
 

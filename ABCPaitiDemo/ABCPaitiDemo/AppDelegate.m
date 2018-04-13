@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <ABCPaitiKit/ABCPaitiKit.h>
+
+#define ABC_APP_KEY     @"5aac840df1664467549b1fba"
+#define ABC_APP_SECRET  @"F0B732122E7CADAC4D857E2C25050C7C"
 
 @interface AppDelegate ()
 
@@ -17,6 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[ABCPaitiManager sharedInstance] startWithAppKey:ABC_APP_KEY secret:ABC_APP_SECRET];
     return YES;
 }
 

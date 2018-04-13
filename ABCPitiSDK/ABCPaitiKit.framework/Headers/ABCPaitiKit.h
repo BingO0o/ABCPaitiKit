@@ -16,13 +16,6 @@ FOUNDATION_EXPORT const unsigned char ABCPaitiKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ABCPaitiKit/PublicHeader.h>
 
-#import <ABCPaitiKit/LOTLib.h>
-#import <ABCPaitiKit/MDQueListViewController.h>
-
-#import <ABCPaitiKit/NSDictionary+Extension.h>
-#import <ABCPaitiKit/UIImageView+Extension.h>
-#import <ABCPaitiKit/UIImage+Extension.h>
-#import <ABCPaitiKit/UIColor+Extension.h>
-#import <ABCPaitiKit/UIDevice+Extension.h>
-#import <ABCPaitiKit/UIViewController+Extension.h>
-
+#import <ABCPaitiKit/ABCCaptureSessionManager.h>
+#import <ABCPaitiKit/ABCImageUtil.h>
+#import <ABCPaitiKit/ABCPaitiManager.h>

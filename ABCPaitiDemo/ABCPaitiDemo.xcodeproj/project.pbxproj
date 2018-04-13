@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C82F532CBBD284477350B510 /* libPods-ABCPaitiDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEB9F8E8571F9BF6BEC96D4 /* libPods-ABCPaitiDemo.a */; };
+		75DF752FE17C4ACA175A57BA /* libPods-ABCPaitiDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CEE15879BF799CEBE42F56 /* libPods-ABCPaitiDemo.a */; };
 		D705E1C7205E1E5100F30C60 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = D705E1C6205E1E5100F30C60 /* config.xml */; };
 		D705E207205E1EC700F30C60 /* www in Resources */ = {isa = PBXBuildFile; fileRef = D705E206205E1EC600F30C60 /* www */; };
 		D72723DA205D83BB0071A59E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D72723D9205D83BB0071A59E /* AppDelegate.m */; };
-		D72723DD205D83BB0071A59E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72723DC205D83BB0071A59E /* ViewController.m */; };
 		D72723E0205D83BB0071A59E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72723DE205D83BB0071A59E /* Main.storyboard */; };
 		D72723E2205D83BB0071A59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D72723E1205D83BB0071A59E /* Assets.xcassets */; };
 		D72723E5205D83BB0071A59E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D72723E3205D83BB0071A59E /* LaunchScreen.storyboard */; };
 		D72723E8205D83BB0071A59E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D72723E7205D83BB0071A59E /* main.m */; };
 		D72723F2205D83BB0071A59E /* ABCPaitiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D72723F1205D83BB0071A59E /* ABCPaitiDemoTests.m */; };
 		D72723FD205D83BB0071A59E /* ABCPaitiDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D72723FC205D83BB0071A59E /* ABCPaitiDemoUITests.m */; };
-		D727240F205D864D0071A59E /* XuexiBaoBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D727240E205D864C0071A59E /* XuexiBaoBundle.bundle */; };
+		D7B8D3102080EAB10073E2BF /* ABCQuestionPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D30F2080EAB10073E2BF /* ABCQuestionPlugin.m */; };
+		D7B8D31F2080F84B0073E2BF /* ABCAnswerMo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D3132080F84B0073E2BF /* ABCAnswerMo.m */; };
+		D7B8D3202080F84B0073E2BF /* ABCQuestionMo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D3162080F84B0073E2BF /* ABCQuestionMo.m */; };
+		D7B8D3212080F84B0073E2BF /* ABCQuestionAnswersMo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D3172080F84B0073E2BF /* ABCQuestionAnswersMo.m */; };
+		D7B8D3222080F84B0073E2BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D31B2080F84B0073E2BF /* ViewController.m */; };
+		D7B8D3232080F84B0073E2BF /* DemoCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D31C2080F84B0073E2BF /* DemoCameraViewController.m */; };
+		D7B8D3242080F84B0073E2BF /* ABCQuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B8D31D2080F84B0073E2BF /* ABCQuestionDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,16 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5046D82A5491DDF8E2E6762B /* Pods-ABCPaitiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCPaitiDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo.release.xcconfig"; sourceTree = "<group>"; };
-		83761DA2941E4C850FBD80B5 /* Pods-ABCPaitiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCPaitiDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		CBEB9F8E8571F9BF6BEC96D4 /* libPods-ABCPaitiDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABCPaitiDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5847B4ADEE445319346EEEE2 /* Pods-ABCPaitiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCPaitiDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B9CEE15879BF799CEBE42F56 /* libPods-ABCPaitiDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABCPaitiDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60B61292F7CDE00E40A51AA /* Pods-ABCPaitiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCPaitiDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D705E1C6205E1E5100F30C60 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		D705E206205E1EC600F30C60 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		D72723D5205D83BB0071A59E /* ABCPaitiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABCPaitiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72723D8205D83BB0071A59E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D72723D9205D83BB0071A59E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D72723DB205D83BB0071A59E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D72723DC205D83BB0071A59E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D72723DF205D83BB0071A59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D72723E1205D83BB0071A59E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D72723E4205D83BB0071A59E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,7 +63,20 @@
 		D72723F8205D83BB0071A59E /* ABCPaitiDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABCPaitiDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72723FC205D83BB0071A59E /* ABCPaitiDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABCPaitiDemoUITests.m; sourceTree = "<group>"; };
 		D72723FE205D83BB0071A59E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D727240E205D864C0071A59E /* XuexiBaoBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XuexiBaoBundle.bundle; sourceTree = "<group>"; };
+		D7B8D30A2080E92A0073E2BF /* ABCQuestionPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCQuestionPlugin.h; sourceTree = "<group>"; };
+		D7B8D30F2080EAB10073E2BF /* ABCQuestionPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCQuestionPlugin.m; sourceTree = "<group>"; };
+		D7B8D3122080F84B0073E2BF /* ABCQuestionMo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCQuestionMo.h; sourceTree = "<group>"; };
+		D7B8D3132080F84B0073E2BF /* ABCAnswerMo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCAnswerMo.m; sourceTree = "<group>"; };
+		D7B8D3142080F84B0073E2BF /* ABCQuestionAnswersMo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCQuestionAnswersMo.h; sourceTree = "<group>"; };
+		D7B8D3152080F84B0073E2BF /* ABCAnswerMo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCAnswerMo.h; sourceTree = "<group>"; };
+		D7B8D3162080F84B0073E2BF /* ABCQuestionMo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCQuestionMo.m; sourceTree = "<group>"; };
+		D7B8D3172080F84B0073E2BF /* ABCQuestionAnswersMo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCQuestionAnswersMo.m; sourceTree = "<group>"; };
+		D7B8D3192080F84B0073E2BF /* DemoCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCameraViewController.h; sourceTree = "<group>"; };
+		D7B8D31A2080F84B0073E2BF /* ABCQuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABCQuestionDetailViewController.h; sourceTree = "<group>"; };
+		D7B8D31B2080F84B0073E2BF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D7B8D31C2080F84B0073E2BF /* DemoCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCameraViewController.m; sourceTree = "<group>"; };
+		D7B8D31D2080F84B0073E2BF /* ABCQuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABCQuestionDetailViewController.m; sourceTree = "<group>"; };
+		D7B8D31E2080F84B0073E2BF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C82F532CBBD284477350B510 /* libPods-ABCPaitiDemo.a in Frameworks */,
+				75DF752FE17C4ACA175A57BA /* libPods-ABCPaitiDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,21 +105,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		30EC295497E824B2417D307D /* Pods */ = {
+		27AC4E6AED06F7A55AC3FADD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83761DA2941E4C850FBD80B5 /* Pods-ABCPaitiDemo.debug.xcconfig */,
-				5046D82A5491DDF8E2E6762B /* Pods-ABCPaitiDemo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B60535662C116DF287E9E262 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CBEB9F8E8571F9BF6BEC96D4 /* libPods-ABCPaitiDemo.a */,
+				B9CEE15879BF799CEBE42F56 /* libPods-ABCPaitiDemo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BE6613B08A1F2D63A679963 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C60B61292F7CDE00E40A51AA /* Pods-ABCPaitiDemo.debug.xcconfig */,
+				5847B4ADEE445319346EEEE2 /* Pods-ABCPaitiDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D72723CC205D83BB0071A59E = {
@@ -113,8 +129,8 @@
 				D72723F0205D83BB0071A59E /* ABCPaitiDemoTests */,
 				D72723FB205D83BB0071A59E /* ABCPaitiDemoUITests */,
 				D72723D6205D83BB0071A59E /* Products */,
-				30EC295497E824B2417D307D /* Pods */,
-				B60535662C116DF287E9E262 /* Frameworks */,
+				8BE6613B08A1F2D63A679963 /* Pods */,
+				27AC4E6AED06F7A55AC3FADD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,13 +147,13 @@
 		D72723D7205D83BB0071A59E /* ABCPaitiDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D7B8D3112080F84A0073E2BF /* Model */,
+				D7B8D3182080F84B0073E2BF /* ViewController */,
+				D7B8D3082080E92A0073E2BF /* Plugin */,
 				D705E206205E1EC600F30C60 /* www */,
 				D705E1C6205E1E5100F30C60 /* config.xml */,
-				D727240E205D864C0071A59E /* XuexiBaoBundle.bundle */,
 				D72723D8205D83BB0071A59E /* AppDelegate.h */,
 				D72723D9205D83BB0071A59E /* AppDelegate.m */,
-				D72723DB205D83BB0071A59E /* ViewController.h */,
-				D72723DC205D83BB0071A59E /* ViewController.m */,
 				D72723DE205D83BB0071A59E /* Main.storyboard */,
 				D72723E1205D83BB0071A59E /* Assets.xcassets */,
 				D72723E3205D83BB0071A59E /* LaunchScreen.storyboard */,
@@ -165,6 +181,41 @@
 			path = ABCPaitiDemoUITests;
 			sourceTree = "<group>";
 		};
+		D7B8D3082080E92A0073E2BF /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				D7B8D30A2080E92A0073E2BF /* ABCQuestionPlugin.h */,
+				D7B8D30F2080EAB10073E2BF /* ABCQuestionPlugin.m */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		D7B8D3112080F84A0073E2BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7B8D3122080F84B0073E2BF /* ABCQuestionMo.h */,
+				D7B8D3132080F84B0073E2BF /* ABCAnswerMo.m */,
+				D7B8D3142080F84B0073E2BF /* ABCQuestionAnswersMo.h */,
+				D7B8D3152080F84B0073E2BF /* ABCAnswerMo.h */,
+				D7B8D3162080F84B0073E2BF /* ABCQuestionMo.m */,
+				D7B8D3172080F84B0073E2BF /* ABCQuestionAnswersMo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7B8D3182080F84B0073E2BF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D7B8D3192080F84B0073E2BF /* DemoCameraViewController.h */,
+				D7B8D31A2080F84B0073E2BF /* ABCQuestionDetailViewController.h */,
+				D7B8D31B2080F84B0073E2BF /* ViewController.m */,
+				D7B8D31C2080F84B0073E2BF /* DemoCameraViewController.m */,
+				D7B8D31D2080F84B0073E2BF /* ABCQuestionDetailViewController.m */,
+				D7B8D31E2080F84B0073E2BF /* ViewController.h */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,12 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7272401205D83BB0071A59E /* Build configuration list for PBXNativeTarget "ABCPaitiDemo" */;
 			buildPhases = (
-				4E5C2B30C6A1D1ACC2F05545 /* [CP] Check Pods Manifest.lock */,
+				E4CAA74895C4057A7A7177A0 /* [CP] Check Pods Manifest.lock */,
 				D72723D1205D83BB0071A59E /* Sources */,
 				D72723D2205D83BB0071A59E /* Frameworks */,
 				D72723D3205D83BB0071A59E /* Resources */,
-				7C17E2E197FAB9F809961776 /* [CP] Embed Pods Frameworks */,
-				1BA7C0FF8A916B21CD74015D /* [CP] Copy Pods Resources */,
+				21918A5970B7E00BC482B366 /* [CP] Embed Pods Frameworks */,
+				06F0C587275C2C2A9F3418FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,7 +326,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D705E207205E1EC700F30C60 /* www in Resources */,
-				D727240F205D864D0071A59E /* XuexiBaoBundle.bundle in Resources */,
 				D72723E5205D83BB0071A59E /* LaunchScreen.storyboard in Resources */,
 				D72723E2205D83BB0071A59E /* Assets.xcassets in Resources */,
 				D72723E0205D83BB0071A59E /* Main.storyboard in Resources */,
@@ -300,40 +350,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1BA7C0FF8A916B21CD74015D /* [CP] Copy Pods Resources */ = {
+		06F0C587275C2C2A9F3418FE /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo-resources.sh",
+				"${PODS_ROOT}/BFKit/BFKit/Languages/en.lproj",
+				"${PODS_ROOT}/BFKit/BFKit/Languages/id.lproj",
+				"${PODS_ROOT}/BFKit/BFKit/Languages/it.lproj",
+				"${PODS_ROOT}/BFKit/BFKit/Languages/ru.lproj",
+				"${PODS_ROOT}/BFKit/BFKit/Languages/uk.lproj",
+				"${PODS_ROOT}/BFKit/BFKit/Languages/vi.lproj",
+				"${PODS_ROOT}/BFKit/BFKit/Languages/zh-Hans.lproj",
+				"${PODS_ROOT}/BFKit/BFKit/Languages/zh-Hant.lproj",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/id.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/it.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ru.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/uk.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/vi.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hans.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/zh-Hant.lproj",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E5C2B30C6A1D1ACC2F05545 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ABCPaitiDemo-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C17E2E197FAB9F809961776 /* [CP] Embed Pods Frameworks */ = {
+		21918A5970B7E00BC482B366 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,6 +400,24 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E4CAA74895C4057A7A7177A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ABCPaitiDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -358,8 +425,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D72723DD205D83BB0071A59E /* ViewController.m in Sources */,
+				D7B8D3222080F84B0073E2BF /* ViewController.m in Sources */,
+				D7B8D3242080F84B0073E2BF /* ABCQuestionDetailViewController.m in Sources */,
 				D72723E8205D83BB0071A59E /* main.m in Sources */,
+				D7B8D3232080F84B0073E2BF /* DemoCameraViewController.m in Sources */,
+				D7B8D3102080EAB10073E2BF /* ABCQuestionPlugin.m in Sources */,
+				D7B8D3212080F84B0073E2BF /* ABCQuestionAnswersMo.m in Sources */,
+				D7B8D3202080F84B0073E2BF /* ABCQuestionMo.m in Sources */,
+				D7B8D31F2080F84B0073E2BF /* ABCAnswerMo.m in Sources */,
 				D72723DA205D83BB0071A59E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,7 +594,7 @@
 		};
 		D7272402205D83BB0071A59E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83761DA2941E4C850FBD80B5 /* Pods-ABCPaitiDemo.debug.xcconfig */;
+			baseConfigurationReference = C60B61292F7CDE00E40A51AA /* Pods-ABCPaitiDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -539,7 +612,7 @@
 		};
 		D7272403205D83BB0071A59E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5046D82A5491DDF8E2E6762B /* Pods-ABCPaitiDemo.release.xcconfig */;
+			baseConfigurationReference = 5847B4ADEE445319346EEEE2 /* Pods-ABCPaitiDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ABCPaiti"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "ABCPaiti."
   s.description      = "ABCPaiti of bing"
   s.homepage         = "http://www.abcpen.com"
@@ -14,12 +14,8 @@ Pod::Spec.new do |s|
     sp.public_header_files = 'ABCPitiSDK/ABCPaitiKit.framework/Headers/ABCPaitiKit.h'
     sp.source_files        = 'ABCPitiSDK/ABCPaitiKit.framework/Headers/*.{h}'
     sp.vendored_frameworks = 'ABCPitiSDK/ABCPaitiKit.framework'
-    # sp.dependency 'AFNetworking', '~> 2.4.1'
-    # sp.dependency 'SDWebImage', '~> 3.7.3'
-    # sp.dependency 'Reachability', '~> 3.2'
-    # sp.dependency 'Cordova', '~> 3.8.0'
-    # sp.dependency 'MagicalRecord', :git => 'https://github.com/magicalpanda/MagicalRecord.git', :commit => '11e1dcdeb78261ae6b02304707d5220dc0cf95e8'
-
+    sp.dependency 'AFNetworking', '~> 3.1.0'
+    sp.dependency 'SAMKeychain', '~> 1.5.3'
     sp.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
   end
 

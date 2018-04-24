@@ -14,6 +14,6 @@
 @property(nonatomic,assign) long long update_time;
 @property(nonatomic,strong) NSString *image_path;
 @property(nonatomic,strong) NSString *image_id;
-@property(nonatomic,assign) int search_type;
+@property(nonatomic,assign) int search_type;//400 未找到结果
 @property(nonatomic,strong) NSString *from_id;
 @end

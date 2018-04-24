@@ -71,7 +71,7 @@ BOOL CanUseCamera() {
     // Do any additional setup after loading the view.
     //notification
     _cameraBtnSet = [[NSMutableSet alloc] init];
-    
+
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kNotificationOrientationChange object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationDidChange:) name:kNotificationOrientationChange object:nil];
     
@@ -82,20 +82,20 @@ BOOL CanUseCamera() {
     }];
     
     [self.captureManager switchGridLines:YES];
-    
+
     [self addTopViewWithText:@"拍照"];
     [self addbottomContainerView];
     [self addCameraMenuView];
     [self addFocusView];
     [self orientationDidChange:[NSNumber numberWithDouble:M_PI_2]];
-    
+  
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    //    [self.captureManager startGravityDetecting];
+//    [self.captureManager startGravityDetecting];
     
     if (!CanUseCamera()) {
         [self showCentralInfoArea:@"拍题前请先允许访问相机" autoDisappear:YES];
@@ -173,7 +173,7 @@ BOOL CanUseCamera() {
         CGFloat width = ScreenWidth / 3;
         CGFloat height = (ScreenHeight - 60) / 3;
         _operBgImgV = [[UIImageView alloc] initWithFrame:CGRectMake(width + 1, height + 1 - 20, width - 1, height - 1 + 40)];
-        //        _operBgImgV.backgroundColor = [COLOR_XUEXIBAO_TINT colorWithAlphaComponent:0.3];
+//        _operBgImgV.backgroundColor = [COLOR_XUEXIBAO_TINT colorWithAlphaComponent:0.3];
         _operBgImgV.alpha = 0;
     }
     
@@ -220,13 +220,13 @@ BOOL CanUseCamera() {
 {
     UILabel *label = nil;
     
-    
+
     CGFloat bottomY = (ScreenHeight - 60) / 2 - 19;
     CGRect labelFrame = CGRectMake(-65, bottomY, 190, 40);
     
     label = [[UILabel alloc] initWithFrame:labelFrame];
     label.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
-    
+
     label.textColor = [UIColor whiteColor];
     label.numberOfLines = 1;
     label.textAlignment = NSTextAlignmentCenter;
@@ -353,7 +353,7 @@ BOOL CanUseCamera() {
             NSLog(@"获取照片异常，请重新拍摄");
             return;
         }
-        
+
         [_captureManager closeFlashIfPossible:_flashButton];
         
         //TODO 编辑照片
@@ -475,7 +475,7 @@ BOOL CanUseCamera() {
 #pragma mark SCCaptureSessionManager delegate
 - (void)didCapturePhoto:(UIImage*)stillImage
 {
-    
+
 }
 
 - (void)sessionManagerError:(ABCCaptureSessionManager *)sessionManager
@@ -488,7 +488,7 @@ BOOL CanUseCamera() {
 
 - (void)didCometoSteadyForTakingPicture:(ABCCaptureSessionManager *)sessionMgr
 {
-    
+
 }
 
 - (void)didGotPhotoData:(ABCCaptureSessionManager *)sessionMgr
@@ -520,7 +520,7 @@ BOOL CanUseCamera() {
 }
 
 - (void)sessionMgr:(ABCCaptureSessionManager *)manager didDetectOrientation:(NSInteger)orientation {
-    
+  
 }
 
 - (BOOL)shouldAutorotate
@@ -660,9 +660,9 @@ BOOL CanUseCamera() {
          NSLog(@"UIImagePickerControllerReferenceURL");
          ALAssetRepresentation *representation = [asset defaultRepresentation];
          CGImageRef imgRef = NULL;
-         
+        
          imgRef = [representation fullResolutionImage];
-         
+
          //         oriImage = [UIImage imageWithCGImage:imgRef];
          oriImage = [UIImage imageWithCGImage:imgRef scale:representation.scale orientation:(UIImageOrientation)representation.orientation];
          
@@ -670,24 +670,24 @@ BOOL CanUseCamera() {
          
          __block UIImage *image = oriImage; //[oriImage rotate90Clockwise];
          [self dismissViewControllerAnimated:YES completion:^{
-             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                 NSLog(@"Before constraint:%@", NSStringFromCGSize(oriImage.size));
-                 // 0.1. 图片尺寸压缩到1500*1500范围内
-                 oriImage = [ABCImageUtil constraintToMaxLength:oriImage];
-                 
-                 NSLog(@"After constraint:%@", NSStringFromCGSize(oriImage.size));
-                 
-                 image = [ABCImageUtil fixOrientation:oriImage];
-                 
-                 UIImage *stillImage = [ABCImageUtil adjustImageWithAngle:image];//矫正图片
-                 
-                 dispatch_async(dispatch_get_main_queue(), ^{
-                     //                         [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationTakePicture object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:stillImage, kImage, nil]];
+                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                     NSLog(@"Before constraint:%@", NSStringFromCGSize(oriImage.size));
+                     // 0.1. 图片尺寸压缩到1500*1500范围内
+                     oriImage = [ABCImageUtil constraintToMaxLength:oriImage];
+                     
+                     NSLog(@"After constraint:%@", NSStringFromCGSize(oriImage.size));
+                     
+                     image = [ABCImageUtil fixOrientation:oriImage];
+                     
+                     UIImage *stillImage = [ABCImageUtil adjustImageWithAngle:image];//矫正图片
+                     
+                     dispatch_async(dispatch_get_main_queue(), ^{
+//                         [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationTakePicture object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:stillImage, kImage, nil]];
+                     });
                  });
-             });
-             
-             //TODO 编辑图片
-             //             }
+                 
+                 //TODO 编辑图片
+//             }
          }];
      }failureBlock:^(NSError *error){
          NSLog(@"couldn't get asset: %@", error);
@@ -709,13 +709,13 @@ BOOL CanUseCamera() {
 }
 
 /*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

@@ -43,6 +43,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D712B566207F3F4A006526A6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5847B4ADEE445319346EEEE2 /* Pods-ABCPaitiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCPaitiDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B9CEE15879BF799CEBE42F56 /* libPods-ABCPaitiDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABCPaitiDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -227,8 +240,9 @@
 				D72723D1205D83BB0071A59E /* Sources */,
 				D72723D2205D83BB0071A59E /* Frameworks */,
 				D72723D3205D83BB0071A59E /* Resources */,
-				21918A5970B7E00BC482B366 /* [CP] Embed Pods Frameworks */,
-				06F0C587275C2C2A9F3418FE /* [CP] Copy Pods Resources */,
+				D712B566207F3F4A006526A6 /* Embed Frameworks */,
+				71B0662D01FC8E1D69F1C515 /* [CP] Copy Pods Resources */,
+				FC121A7710B79DFDEDE76BA0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,7 +364,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06F0C587275C2C2A9F3418FE /* [CP] Copy Pods Resources */ = {
+		71B0662D01FC8E1D69F1C515 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,24 +398,6 @@
 			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		21918A5970B7E00BC482B366 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo-frameworks.sh",
-				"${PODS_ROOT}/../ABCPitiSDK/ABCPaitiKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ABCPaitiKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		E4CAA74895C4057A7A7177A0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,6 +414,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC121A7710B79DFDEDE76BA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo-frameworks.sh",
+				"${PODS_ROOT}/../ABCPitiSDK/ABCPaitiKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ABCPaitiKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

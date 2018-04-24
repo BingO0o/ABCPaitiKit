@@ -77,9 +77,10 @@
         _imageId=[_imageId stringByReplacingOccurrencesOfString:@"'" withString:@""];
     }
     
-    if (_questionAnswersMo) {
-        NSArray *answers= [self fillterAnswers:_questionAnswersMo.answerMos];
-        NSDictionary *quesion = [_questionAnswersMo.question mj_keyValues];
+    [[ABCPaitiManager sharedInstance] getQuestionAnswers:_imageId success:^(id responseObject) {
+        ABCQuestionAnswersMo *qaMo = [ABCQuestionAnswersMo mj_objectWithKeyValues:responseObject];
+        NSArray *answers= [self fillterAnswers:qaMo.answerMos];
+        NSDictionary *quesion = [qaMo.question mj_keyValues];
         if ( (answers && answers.count>0)  && quesion) {
             if (callBack) {
                 callBack(@{@"status":@2,
@@ -108,11 +109,11 @@
                 callBack(@{@"status":[NSNumber numberWithInteger:-2]});
             }
         }
-    }else{
+    } failure:^(NSString *strMsg) {
         if (callBack) {
             callBack(@{@"status":[NSNumber numberWithInteger:-2]});
         }
-    }
+    }];
 }
 
 -(void)retakePhoto

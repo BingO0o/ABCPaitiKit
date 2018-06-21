@@ -17,6 +17,8 @@
  */
 -(void) onQuestionAnswersData:(id) answerData;
 
+-(void) onAuthFailure:(NSString *) failure;
+
 @end
 
 @interface ABCPaitiManager : NSObject

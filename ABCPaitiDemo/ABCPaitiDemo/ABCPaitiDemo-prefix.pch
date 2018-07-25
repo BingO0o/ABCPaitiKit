@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  ABCPaitiKit
+//
+//  Created by bingo on 2018/4/12.
+//  Copyright © 2018年 杭州喧喧科技有限公司. All rights reserved.
+//
+
+#ifndef ABCPAITIDEMO_pch
+#define ABCPAITIDEMO_pch
+
+#ifdef __OBJC__
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "UIColor+Extension.h"
+#import "UIView+Extension.h"
+#import "UIImage+Extension.h"
+#import "NSDictionary+Extension.h"
+
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_RECT CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
+
+
+#endif
+
+#endif /* ABCPAITIDEMO_pch */

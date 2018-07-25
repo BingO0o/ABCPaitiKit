@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+#import "UIDefines.h"
 
 #define MAX_PINCH_SCALE_NUM   3.f
 #define MIN_PINCH_SCALE_NUM   1.f
@@ -32,6 +33,8 @@ typedef void(^DidCapturePhotoBlock)(UIImage *stillImage);
 @property (nonatomic, assign) CGFloat preScaleNum;
 @property (nonatomic, assign) CGFloat scaleNum;
 
+//设置相机默认方向
+@property (nonatomic, assign) CameraOriType defaultOrientation;
 
 @property (nonatomic, assign) id <ABCCaptureSessionManager> delegate;
 
@@ -42,7 +45,12 @@ typedef void(^DidCapturePhotoBlock)(UIImage *stillImage);
 //- (void)startGravityDetecting;
 //- (void)stopGravityDetecting;
 
+//图片已经过处理，通下面的isOperate=YES
 - (void)takePicture:(DidCapturePhotoBlock)block;
+
+//是否对图片进行处理
+- (void)takePicture:(DidCapturePhotoBlock)block isOperate:(BOOL)isOperate;
+
 - (void)switchCamera:(BOOL)isFrontCamera;
 - (void)pinchCameraViewWithScalNum:(CGFloat)scale;
 - (void)pinchCameraView:(UIPinchGestureRecognizer*)gesture;

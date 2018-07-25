@@ -10,6 +10,8 @@
 #import <ABCPaitiKit/ABCPaitiKit.h>
 #import <BFKit/BFKit.h>
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "MDEditPhotoViewController.h"
+
 
 #define ScreenHeight [[UIScreen mainScreen] bounds].size.height
 #define ScreenWidth [[UIScreen mainScreen] bounds].size.width
@@ -32,7 +34,7 @@ BOOL CanUseCamera() {
     return YES;
 }
 
-@interface DemoCameraViewController ()<ABCCaptureSessionManager,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface DemoCameraViewController ()<ABCCaptureSessionManager,UIImagePickerControllerDelegate, UINavigationControllerDelegate, MDEditPhotoViewControllerDelegate>
 
 @property (nonatomic, strong) ABCCaptureSessionManager *captureManager;
 
@@ -82,6 +84,8 @@ BOOL CanUseCamera() {
     }];
     
     [self.captureManager switchGridLines:YES];
+    //设置默认相机照片方向
+    self.captureManager.defaultOrientation = CAMERA_ORI_PORTRAIT;
 
     [self addTopViewWithText:@"拍照"];
     [self addbottomContainerView];
@@ -353,20 +357,26 @@ BOOL CanUseCamera() {
             NSLog(@"获取照片异常，请重新拍摄");
             return;
         }
-
+        
+//        UIImageView *view = [UIImageView new];
+//        view.image = stillImage;
+//        [self.view addSubview:view];
+//        view.frame = CGRectMake(50, 50, 275, 500);
+        
         [_captureManager closeFlashIfPossible:_flashButton];
         
-        //TODO 编辑照片
-        //demo upload test
-        [[ABCPaitiManager sharedInstance] uploadSubjectPicture:stillImage progress:^(float progress) {
-            NSLog(@"uploadSubjectPicture progress %f",progress);
-        } success:^(id responseObject) {
-            NSLog(@"uploadSubjectPicture response %@",responseObject);
-            [self dismissBtnPressed:nil];
-        } failure:^(NSString *strMsg) {
-            NSLog(@"uploadSubjectPicture failure %@",strMsg);
-        }];
-    }];
+        MDEditPhotoViewController *editViewController = [[MDEditPhotoViewController alloc] initWithNibName:@"MDEditPhotoViewController" bundle:nil];
+        NSLog(@"editVC setImage:%@", NSStringFromCGSize(stillImage.size));
+        
+        [editViewController setImage:stillImage];
+        editViewController.delegate = self;
+        
+        //            editViewController.transitioningDelegate = (id<UIViewControllerTransitioningDelegate>)self;
+        
+        [self presentViewController:editViewController animated:YES completion:NULL];
+        
+        
+    } isOperate:NO];
 }
 
 //拍照页面，网格按钮
@@ -412,6 +422,7 @@ BOOL CanUseCamera() {
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
     
     imagePicker.navigationBar.tintColor = [UIColor whiteColor];
+    imagePicker.delegate = self;
     
     imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     
@@ -433,6 +444,40 @@ BOOL CanUseCamera() {
     if (_flashButton) {
         _flashButton.enabled = enable;
     }
+}
+
+#pragma mark - MDEditPhotoViewControllerDelegate
+- (void)willRepickPhoto
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+- (void)didSelectPhoto:(UIImage *)image
+{
+    //TODO 编辑照片
+    //demo upload test
+    
+     //图片尺寸压缩到1500*1500范围内
+    image = [ABCImageUtil constraintToMaxLength:image];
+
+    NSLog(@"After constraint:%@", NSStringFromCGSize(image.size));
+                //纠正方向
+    image = [ABCImageUtil fixOrientation:image];
+
+    UIImage *stillImage = [ABCImageUtil adjustImageWithAngle:image];//矫正图片
+
+    [self dismissViewControllerAnimated:YES completion:^{
+        [[ABCPaitiManager sharedInstance] uploadSubjectPicture:stillImage progress:^(float progress) {
+            NSLog(@"uploadSubjectPicture progress %f",progress);
+        } success:^(id responseObject) {
+            NSLog(@"uploadSubjectPicture response %@",responseObject);
+            [self dismissBtnPressed:nil];
+        } failure:^(NSString *strMsg) {
+            NSLog(@"uploadSubjectPicture failure %@",strMsg);
+        }];
+    }];
 }
 
 #pragma mark - get&&set
@@ -651,49 +696,40 @@ BOOL CanUseCamera() {
         return;
     
     NSLog(@"didFinishPickingMediaWithInfo:%@", info);
-    __block UIImage *oriImage = nil;
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-    NSURL *url = [info objectForKey:UIImagePickerControllerReferenceURL];
-    [library assetForURL:url
-             resultBlock:^(ALAsset *asset)
-     {
-         NSLog(@"UIImagePickerControllerReferenceURL");
-         ALAssetRepresentation *representation = [asset defaultRepresentation];
-         CGImageRef imgRef = NULL;
-        
-         imgRef = [representation fullResolutionImage];
-
-         //         oriImage = [UIImage imageWithCGImage:imgRef];
-         oriImage = [UIImage imageWithCGImage:imgRef scale:representation.scale orientation:(UIImageOrientation)representation.orientation];
-         
-         NSLog(@"asset scale:%f ori:%ld", representation.scale, (long)representation.orientation);
-         
-         __block UIImage *image = oriImage; //[oriImage rotate90Clockwise];
-         [self dismissViewControllerAnimated:YES completion:^{
-                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                     NSLog(@"Before constraint:%@", NSStringFromCGSize(oriImage.size));
-                     // 0.1. 图片尺寸压缩到1500*1500范围内
-                     oriImage = [ABCImageUtil constraintToMaxLength:oriImage];
-                     
-                     NSLog(@"After constraint:%@", NSStringFromCGSize(oriImage.size));
-                     
-                     image = [ABCImageUtil fixOrientation:oriImage];
-                     
-                     UIImage *stillImage = [ABCImageUtil adjustImageWithAngle:image];//矫正图片
-                     
-                     dispatch_async(dispatch_get_main_queue(), ^{
-//                         [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationTakePicture object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:stillImage, kImage, nil]];
-                     });
-                 });
-                 
-                 //TODO 编辑图片
-//             }
-         }];
-     }failureBlock:^(NSError *error){
-         NSLog(@"couldn't get asset: %@", error);
-     }
-     ];
+    __block UIImage *oriImage = info[UIImagePickerControllerOriginalImage];
     
+    __block UIImage *image = oriImage; //[oriImage rotate90Clockwise];
+    [self dismissViewControllerAnimated:YES completion:^{
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSLog(@"Before constraint:%@", NSStringFromCGSize(oriImage.size));
+            // 0.1. 图片尺寸压缩到1500*1500范围内
+//            oriImage = [ABCImageUtil constraintToMaxLength:oriImage];
+//
+//            NSLog(@"After constraint:%@", NSStringFromCGSize(oriImage.size));
+//
+//            //纠正方向
+//            image = [ABCImageUtil fixOrientation:oriImage];
+//
+//            UIImage *stillImage = [ABCImageUtil adjustImageWithAngle:image];//矫正图片
+            
+            MDEditPhotoViewController *editViewController = [[MDEditPhotoViewController alloc] initWithNibName:@"MDEditPhotoViewController" bundle:nil];
+            NSLog(@"editVC setImage:%@", NSStringFromCGSize(oriImage.size));
+            
+            [editViewController setImage:oriImage];
+            editViewController.delegate = self;
+            
+            //            editViewController.transitioningDelegate = (id<UIViewControllerTransitioningDelegate>)self;
+            
+            [self presentViewController:editViewController animated:YES completion:NULL];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                //                         [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationTakePicture object:self userInfo:[NSDictionary dictionaryWithObjectsAndKeys:stillImage, kImage, nil]];
+            });
+        });
+        
+        //TODO 编辑图片
+        //             }
+    }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

@@ -39,4 +39,6 @@
  */
 + (BOOL)isImageBlur:(UIImage *)image;
 
++ (UIImage*)crop:(UIImage *)image rect:(CGRect)rect;
+
 @end

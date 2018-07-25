@@ -19,3 +19,4 @@ FOUNDATION_EXPORT const unsigned char ABCPaitiKitVersionString[];
 #import <ABCPaitiKit/ABCCaptureSessionManager.h>
 #import <ABCPaitiKit/ABCImageUtil.h>
 #import <ABCPaitiKit/ABCPaitiManager.h>
+#import <ABCPaitiKit/UIDefines.h>

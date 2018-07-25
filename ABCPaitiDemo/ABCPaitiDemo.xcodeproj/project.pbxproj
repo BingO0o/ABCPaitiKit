@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D8F403821056F1F005BFFB4 /* ic_right_rotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8F402721056F1E005BFFB4 /* ic_right_rotate@2x.png */; };
+		4D8F403921056F1F005BFFB4 /* album_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8F402821056F1E005BFFB4 /* album_btn@2x.png */; };
+		4D8F403A21056F1F005BFFB4 /* MDEditPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8F402921056F1E005BFFB4 /* MDEditPhotoViewController.xib */; };
+		4D8F403B21056F1F005BFFB4 /* ic_left_rotate@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D8F402A21056F1E005BFFB4 /* ic_left_rotate@2x.png */; };
+		4D8F403C21056F1F005BFFB4 /* MDEditPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F402B21056F1E005BFFB4 /* MDEditPhotoViewController.m */; };
+		4D8F403D21056F1F005BFFB4 /* CLClippingTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F402F21056F1E005BFFB4 /* CLClippingTool.m */; };
+		4D8F403E21056F1F005BFFB4 /* CLImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F403021056F1E005BFFB4 /* CLImageToolBase.m */; };
+		4D8F403F21056F1F005BFFB4 /* MDEditPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F403321056F1E005BFFB4 /* MDEditPhotoView.m */; };
+		4D8F404021056F1F005BFFB4 /* MDCropImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F403421056F1E005BFFB4 /* MDCropImageView.m */; };
+		4D8F404121056F1F005BFFB4 /* MDEditPhotoBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F403521056F1E005BFFB4 /* MDEditPhotoBottomView.m */; };
+		4D8F405E21056FC8005BFFB4 /* UIDevice+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F404621056FC6005BFFB4 /* UIDevice+Extension.m */; };
+		4D8F405F21056FC8005BFFB4 /* MDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F404821056FC6005BFFB4 /* MDExtension.m */; };
+		4D8F406021056FC8005BFFB4 /* UIView+ Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F404921056FC6005BFFB4 /* UIView+ Extension.m */; };
+		4D8F406121056FC8005BFFB4 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F404B21056FC6005BFFB4 /* UIView+Frame.m */; };
+		4D8F406221056FC8005BFFB4 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F404E21056FC7005BFFB4 /* UIColor+Extension.m */; };
+		4D8F406321056FC8005BFFB4 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F404F21056FC7005BFFB4 /* UIImage+Extension.m */; };
+		4D8F406421056FC8005BFFB4 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F405221056FC7005BFFB4 /* UIAlertView+Blocks.m */; };
+		4D8F406521056FC8005BFFB4 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F405321056FC7005BFFB4 /* NSDictionary+Extension.m */; };
+		4D8F406621056FC8005BFFB4 /* UIImageView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F405521056FC7005BFFB4 /* UIImageView+Extension.m */; };
+		4D8F406721056FC8005BFFB4 /* UIViewController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F405721056FC7005BFFB4 /* UIViewController+Extension.m */; };
+		4D8F406821056FC8005BFFB4 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F405B21056FC7005BFFB4 /* NSString+Additions.m */; };
+		4D8F406921056FC8005BFFB4 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F405D21056FC8005BFFB4 /* UIActionSheet+Blocks.m */; };
+		4D8F407E2105820F005BFFB4 /* MDCameraCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8F407C2105820F005BFFB4 /* MDCameraCoverView.m */; };
+		4D8F40802105824D005BFFB4 /* CameraCover.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8F407F2105824D005BFFB4 /* CameraCover.xib */; };
 		75DF752FE17C4ACA175A57BA /* libPods-ABCPaitiDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CEE15879BF799CEBE42F56 /* libPods-ABCPaitiDemo.a */; };
 		D705E1C7205E1E5100F30C60 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = D705E1C6205E1E5100F30C60 /* config.xml */; };
 		D705E207205E1EC700F30C60 /* www in Resources */ = {isa = PBXBuildFile; fileRef = D705E206205E1EC600F30C60 /* www */; };
@@ -57,6 +81,50 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D8F402521056F1E005BFFB4 /* MDEditPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDEditPhotoViewController.h; sourceTree = "<group>"; };
+		4D8F402721056F1E005BFFB4 /* ic_right_rotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_right_rotate@2x.png"; sourceTree = "<group>"; };
+		4D8F402821056F1E005BFFB4 /* album_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "album_btn@2x.png"; sourceTree = "<group>"; };
+		4D8F402921056F1E005BFFB4 /* MDEditPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MDEditPhotoViewController.xib; sourceTree = "<group>"; };
+		4D8F402A21056F1E005BFFB4 /* ic_left_rotate@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_left_rotate@2x.png"; sourceTree = "<group>"; };
+		4D8F402B21056F1E005BFFB4 /* MDEditPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDEditPhotoViewController.m; sourceTree = "<group>"; };
+		4D8F402E21056F1E005BFFB4 /* CLClippingTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLClippingTool.h; sourceTree = "<group>"; };
+		4D8F402F21056F1E005BFFB4 /* CLClippingTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLClippingTool.m; sourceTree = "<group>"; };
+		4D8F403021056F1E005BFFB4 /* CLImageToolBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLImageToolBase.m; sourceTree = "<group>"; };
+		4D8F403121056F1E005BFFB4 /* MDEditPhotoBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDEditPhotoBottomView.h; sourceTree = "<group>"; };
+		4D8F403221056F1E005BFFB4 /* MDCropImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCropImageView.h; sourceTree = "<group>"; };
+		4D8F403321056F1E005BFFB4 /* MDEditPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDEditPhotoView.m; sourceTree = "<group>"; };
+		4D8F403421056F1E005BFFB4 /* MDCropImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCropImageView.m; sourceTree = "<group>"; };
+		4D8F403521056F1E005BFFB4 /* MDEditPhotoBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDEditPhotoBottomView.m; sourceTree = "<group>"; };
+		4D8F403621056F1E005BFFB4 /* CLImageToolBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLImageToolBase.h; sourceTree = "<group>"; };
+		4D8F403721056F1E005BFFB4 /* MDEditPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDEditPhotoView.h; sourceTree = "<group>"; };
+		4D8F404621056FC6005BFFB4 /* UIDevice+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+Extension.m"; sourceTree = "<group>"; };
+		4D8F404721056FC6005BFFB4 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
+		4D8F404821056FC6005BFFB4 /* MDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDExtension.m; sourceTree = "<group>"; };
+		4D8F404921056FC6005BFFB4 /* UIView+ Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ Extension.m"; sourceTree = "<group>"; };
+		4D8F404A21056FC6005BFFB4 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		4D8F404B21056FC6005BFFB4 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		4D8F404C21056FC7005BFFB4 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		4D8F404D21056FC7005BFFB4 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		4D8F404E21056FC7005BFFB4 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		4D8F404F21056FC7005BFFB4 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		4D8F405021056FC7005BFFB4 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		4D8F405121056FC7005BFFB4 /* MDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDExtension.h; sourceTree = "<group>"; };
+		4D8F405221056FC7005BFFB4 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		4D8F405321056FC7005BFFB4 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
+		4D8F405421056FC7005BFFB4 /* UIDevice+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+Extension.h"; sourceTree = "<group>"; };
+		4D8F405521056FC7005BFFB4 /* UIImageView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension.m"; sourceTree = "<group>"; };
+		4D8F405621056FC7005BFFB4 /* UIViewController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Extension.h"; sourceTree = "<group>"; };
+		4D8F405721056FC7005BFFB4 /* UIViewController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Extension.m"; sourceTree = "<group>"; };
+		4D8F405821056FC7005BFFB4 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		4D8F405921056FC7005BFFB4 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		4D8F405A21056FC7005BFFB4 /* UIImageView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension.h"; sourceTree = "<group>"; };
+		4D8F405B21056FC7005BFFB4 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		4D8F405C21056FC8005BFFB4 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		4D8F405D21056FC8005BFFB4 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		4D8F406B2105711B005BFFB4 /* ABCPaitiDemo-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ABCPaitiDemo-prefix.pch"; path = "ABCPaitiDemo/ABCPaitiDemo-prefix.pch"; sourceTree = "<group>"; };
+		4D8F407C2105820F005BFFB4 /* MDCameraCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCameraCoverView.m; sourceTree = "<group>"; };
+		4D8F407D2105820F005BFFB4 /* MDCameraCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCameraCoverView.h; sourceTree = "<group>"; };
+		4D8F407F2105824D005BFFB4 /* CameraCover.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraCover.xib; sourceTree = "<group>"; };
 		5847B4ADEE445319346EEEE2 /* Pods-ABCPaitiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCPaitiDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B9CEE15879BF799CEBE42F56 /* libPods-ABCPaitiDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ABCPaitiDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60B61292F7CDE00E40A51AA /* Pods-ABCPaitiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABCPaitiDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-ABCPaitiDemo/Pods-ABCPaitiDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +194,87 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4D8F402421056F1E005BFFB4 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				4D8F402521056F1E005BFFB4 /* MDEditPhotoViewController.h */,
+				4D8F402B21056F1E005BFFB4 /* MDEditPhotoViewController.m */,
+				4D8F402621056F1E005BFFB4 /* Resources */,
+				4D8F402C21056F1E005BFFB4 /* Views */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		4D8F402621056F1E005BFFB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D8F402721056F1E005BFFB4 /* ic_right_rotate@2x.png */,
+				4D8F402821056F1E005BFFB4 /* album_btn@2x.png */,
+				4D8F402921056F1E005BFFB4 /* MDEditPhotoViewController.xib */,
+				4D8F402A21056F1E005BFFB4 /* ic_left_rotate@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4D8F402C21056F1E005BFFB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D8F407F2105824D005BFFB4 /* CameraCover.xib */,
+				4D8F407D2105820F005BFFB4 /* MDCameraCoverView.h */,
+				4D8F407C2105820F005BFFB4 /* MDCameraCoverView.m */,
+				4D8F402D21056F1E005BFFB4 /* CLClippingTool */,
+				4D8F403621056F1E005BFFB4 /* CLImageToolBase.h */,
+				4D8F403021056F1E005BFFB4 /* CLImageToolBase.m */,
+				4D8F403221056F1E005BFFB4 /* MDCropImageView.h */,
+				4D8F403421056F1E005BFFB4 /* MDCropImageView.m */,
+				4D8F403121056F1E005BFFB4 /* MDEditPhotoBottomView.h */,
+				4D8F403521056F1E005BFFB4 /* MDEditPhotoBottomView.m */,
+				4D8F403721056F1E005BFFB4 /* MDEditPhotoView.h */,
+				4D8F403321056F1E005BFFB4 /* MDEditPhotoView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D8F402D21056F1E005BFFB4 /* CLClippingTool */ = {
+			isa = PBXGroup;
+			children = (
+				4D8F402E21056F1E005BFFB4 /* CLClippingTool.h */,
+				4D8F402F21056F1E005BFFB4 /* CLClippingTool.m */,
+			);
+			path = CLClippingTool;
+			sourceTree = "<group>";
+		};
+		4D8F404221056F9E005BFFB4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4D8F405121056FC7005BFFB4 /* MDExtension.h */,
+				4D8F404821056FC6005BFFB4 /* MDExtension.m */,
+				4D8F404721056FC6005BFFB4 /* NSDictionary+Extension.h */,
+				4D8F405321056FC7005BFFB4 /* NSDictionary+Extension.m */,
+				4D8F405821056FC7005BFFB4 /* NSString+Additions.h */,
+				4D8F405B21056FC7005BFFB4 /* NSString+Additions.m */,
+				4D8F404A21056FC6005BFFB4 /* UIActionSheet+Blocks.h */,
+				4D8F405D21056FC8005BFFB4 /* UIActionSheet+Blocks.m */,
+				4D8F405921056FC7005BFFB4 /* UIAlertView+Blocks.h */,
+				4D8F405221056FC7005BFFB4 /* UIAlertView+Blocks.m */,
+				4D8F405021056FC7005BFFB4 /* UIColor+Extension.h */,
+				4D8F404E21056FC7005BFFB4 /* UIColor+Extension.m */,
+				4D8F405421056FC7005BFFB4 /* UIDevice+Extension.h */,
+				4D8F404621056FC6005BFFB4 /* UIDevice+Extension.m */,
+				4D8F404D21056FC7005BFFB4 /* UIImage+Extension.h */,
+				4D8F404F21056FC7005BFFB4 /* UIImage+Extension.m */,
+				4D8F405A21056FC7005BFFB4 /* UIImageView+Extension.h */,
+				4D8F405521056FC7005BFFB4 /* UIImageView+Extension.m */,
+				4D8F404921056FC6005BFFB4 /* UIView+ Extension.m */,
+				4D8F405C21056FC8005BFFB4 /* UIView+Extension.h */,
+				4D8F404C21056FC7005BFFB4 /* UIView+Frame.h */,
+				4D8F404B21056FC6005BFFB4 /* UIView+Frame.m */,
+				4D8F405621056FC7005BFFB4 /* UIViewController+Extension.h */,
+				4D8F405721056FC7005BFFB4 /* UIViewController+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		8BE6613B08A1F2D63A679963 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +287,7 @@
 		D72723CC205D83BB0071A59E = {
 			isa = PBXGroup;
 			children = (
+				4D8F406B2105711B005BFFB4 /* ABCPaitiDemo-prefix.pch */,
 				D72723D7205D83BB0071A59E /* ABCPaitiDemo */,
 				D72723F0205D83BB0071A59E /* ABCPaitiDemoTests */,
 				D72723FB205D83BB0071A59E /* ABCPaitiDemoUITests */,
@@ -160,6 +310,8 @@
 		D72723D7205D83BB0071A59E /* ABCPaitiDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4D8F404221056F9E005BFFB4 /* Categories */,
+				4D8F402421056F1E005BFFB4 /* Edit */,
 				D7B8D3112080F84A0073E2BF /* Model */,
 				D7B8D3182080F84B0073E2BF /* ViewController */,
 				D7B8D3082080E92A0073E2BF /* Plugin */,
@@ -220,11 +372,11 @@
 			isa = PBXGroup;
 			children = (
 				D7B8D3192080F84B0073E2BF /* DemoCameraViewController.h */,
-				D7B8D31A2080F84B0073E2BF /* ABCQuestionDetailViewController.h */,
-				D7B8D31B2080F84B0073E2BF /* ViewController.m */,
 				D7B8D31C2080F84B0073E2BF /* DemoCameraViewController.m */,
+				D7B8D31A2080F84B0073E2BF /* ABCQuestionDetailViewController.h */,
 				D7B8D31D2080F84B0073E2BF /* ABCQuestionDetailViewController.m */,
 				D7B8D31E2080F84B0073E2BF /* ViewController.h */,
+				D7B8D31B2080F84B0073E2BF /* ViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -242,7 +394,7 @@
 				D72723D3205D83BB0071A59E /* Resources */,
 				D712B566207F3F4A006526A6 /* Embed Frameworks */,
 				71B0662D01FC8E1D69F1C515 /* [CP] Copy Pods Resources */,
-				FC121A7710B79DFDEDE76BA0 /* [CP] Embed Pods Frameworks */,
+				EBFA773A976BD1964730F344 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,9 +492,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D705E207205E1EC700F30C60 /* www in Resources */,
+				4D8F403B21056F1F005BFFB4 /* ic_left_rotate@2x.png in Resources */,
 				D72723E5205D83BB0071A59E /* LaunchScreen.storyboard in Resources */,
+				4D8F403921056F1F005BFFB4 /* album_btn@2x.png in Resources */,
 				D72723E2205D83BB0071A59E /* Assets.xcassets in Resources */,
 				D72723E0205D83BB0071A59E /* Main.storyboard in Resources */,
+				4D8F40802105824D005BFFB4 /* CameraCover.xib in Resources */,
+				4D8F403821056F1F005BFFB4 /* ic_right_rotate@2x.png in Resources */,
+				4D8F403A21056F1F005BFFB4 /* MDEditPhotoViewController.xib in Resources */,
 				D705E1C7205E1E5100F30C60 /* config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +573,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FC121A7710B79DFDEDE76BA0 /* [CP] Embed Pods Frameworks */ = {
+		EBFA773A976BD1964730F344 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -442,10 +599,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B8D3222080F84B0073E2BF /* ViewController.m in Sources */,
+				4D8F406021056FC8005BFFB4 /* UIView+ Extension.m in Sources */,
+				4D8F406521056FC8005BFFB4 /* NSDictionary+Extension.m in Sources */,
+				4D8F404121056F1F005BFFB4 /* MDEditPhotoBottomView.m in Sources */,
+				4D8F403D21056F1F005BFFB4 /* CLClippingTool.m in Sources */,
+				4D8F403F21056F1F005BFFB4 /* MDEditPhotoView.m in Sources */,
 				D7B8D3242080F84B0073E2BF /* ABCQuestionDetailViewController.m in Sources */,
+				4D8F405E21056FC8005BFFB4 /* UIDevice+Extension.m in Sources */,
+				4D8F403E21056F1F005BFFB4 /* CLImageToolBase.m in Sources */,
+				4D8F406621056FC8005BFFB4 /* UIImageView+Extension.m in Sources */,
+				4D8F406121056FC8005BFFB4 /* UIView+Frame.m in Sources */,
+				4D8F406321056FC8005BFFB4 /* UIImage+Extension.m in Sources */,
+				4D8F406721056FC8005BFFB4 /* UIViewController+Extension.m in Sources */,
 				D72723E8205D83BB0071A59E /* main.m in Sources */,
+				4D8F406221056FC8005BFFB4 /* UIColor+Extension.m in Sources */,
+				4D8F406921056FC8005BFFB4 /* UIActionSheet+Blocks.m in Sources */,
 				D7B8D3232080F84B0073E2BF /* DemoCameraViewController.m in Sources */,
+				4D8F403C21056F1F005BFFB4 /* MDEditPhotoViewController.m in Sources */,
+				4D8F407E2105820F005BFFB4 /* MDCameraCoverView.m in Sources */,
+				4D8F406421056FC8005BFFB4 /* UIAlertView+Blocks.m in Sources */,
+				4D8F405F21056FC8005BFFB4 /* MDExtension.m in Sources */,
 				D7B8D3102080EAB10073E2BF /* ABCQuestionPlugin.m in Sources */,
+				4D8F406821056FC8005BFFB4 /* NSString+Additions.m in Sources */,
+				4D8F404021056F1F005BFFB4 /* MDCropImageView.m in Sources */,
 				D7B8D3212080F84B0073E2BF /* ABCQuestionAnswersMo.m in Sources */,
 				D7B8D3202080F84B0073E2BF /* ABCQuestionMo.m in Sources */,
 				D7B8D31F2080F84B0073E2BF /* ABCAnswerMo.m in Sources */,
@@ -613,14 +789,16 @@
 			baseConfigurationReference = C60B61292F7CDE00E40A51AA /* Pods-ABCPaitiDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = XYH562EV4N;
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ABCPaitiDemo/ABCPaitiDemo-Prefix.pch";
 				INFOPLIST_FILE = ABCPaitiDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = core.camera.com.smartsdkdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abcpen.paitidemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "5dc3d25e-ac87-405c-a5b8-fb43819fe316";
+				PROVISIONING_PROFILE = "06761f26-04e8-4093-af83-c4984b20f191";
 				PROVISIONING_PROFILE_SPECIFIER = Wildcard;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -635,9 +813,10 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = KUU857G93Q;
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ABCPaitiDemo/ABCPaitiDemo-Prefix.pch";
 				INFOPLIST_FILE = ABCPaitiDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = core.camera.com.smartsdkdemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abcpen.paitidemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "58ea1a11-3239-453a-a47c-4d17f466c616";
 				PROVISIONING_PROFILE_SPECIFIER = enterprise_wildcard;

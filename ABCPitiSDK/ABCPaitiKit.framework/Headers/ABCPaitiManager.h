@@ -48,8 +48,6 @@
  *  @abstract
  *  上传图片
  *
- *  @discussion
- *  此接口会对上传的图片进行压缩等处理
  */
 -(void) uploadSubjectPicture:(UIImage *)image
                     progress:(void (^)(float progress)) progress

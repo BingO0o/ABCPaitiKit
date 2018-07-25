@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.name             = "ABCPiti"
-  s.version          = "0.0.1"
+  s.version          = "0.0.4"
   s.summary          = "ABCPiti."
   s.description      = "ABCPiti of bing"
   s.homepage         = "http://www.abcpen.com"
   s.license          = 'MIT'
   s.author           = { "bing" => "bing@abcpen.com" }
-  s.source           = { :git => 'https://github.com/BingO0o/ABCPaitiKit.git' }
+  s.source           = { :git => 'https://github.com/abcpen-inc/ABCPaitiKit.git' }
   s.platform         = :ios, '9.0'
   s.requires_arc     = true
 
